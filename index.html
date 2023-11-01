@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Google Sheet</title>
+</head>
+
+<body>
+  <section class="tools">
+    <div class="options">
+      <span class="material-symbols-outlined tool-btn">file_copy</span>
+
+      <span class="material-symbols-outlined tool-btn">cut</span>
+
+      <span class="material-symbols-outlined tool-btn">content_paste</span>
+
+      <select name="fontFamily" id="fontFamily">
+        <option value="MonoSpace">MonoSpace</option>
+        <option value="Sans-serif">Sans-serif</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Cursive">Cursive</option>
+      </select>
+
+      <input type="number" id="fontSize" name="fontSize" min="8" max="24" placeholder="FontSize">
+
+      <span class="material-symbols-outlined tool-btn">format_bold</span>
+
+      <span class="material-symbols-outlined tool-btn">format_italic</span>
+
+      <span class="material-symbols-outlined tool-btn">format_underlined</span>
+
+      <span class="material-symbols-outlined tool-btn">format_align_left</span>
+
+      <span class="material-symbols-outlined tool-btn">format_align_center</span>
+
+      <span class="material-symbols-outlined tool-btn">format_align_right</span>
+
+      <span class="material-symbols-outlined tool-btn">format_color_text</span>
+
+      <span class="material-symbols-outlined tool-btn">format_color_fill</span>
+
+      <span class="material-symbols-outlined tool-btn">cloud_upload</span>
+
+      <span class="material-symbols-outlined tool-btn">cloud_download</span>
+    </div>
+
+    <div class="bottom-section">
+      <div class="active-cell">null</div>
+      <input oninput="onChangeFontSize()" type="text" class="expression" placeholder="f( x )">
+    </div>
+  </section>
+
+  <section class="root-container">
+    <div class="header"></div>
+    <div class="body">
+      <div class="sno"></div>
+      <div class="main"></div>
+    </div>
+  </section>
+
+  <script src="./tools.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
